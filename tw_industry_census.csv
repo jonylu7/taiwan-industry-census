@@ -1,0 +1,324 @@
+﻿industry_code,industry_name,indicator_id,indicator_name,unit,1981,1986,1991,1996,2001,2006,2011,2016,2021,change_2016_to_2021_pct
+B,Mining and Quarrying,1,Number of enterprises (year-end),establishments,942.0,880.0,964.0,987.0,812.0,497.0,432.0,290.0,280.0,-3.45
+B,Mining and Quarrying,2,Number of employees (year-end),persons,39954.0,27738.0,16293.0,12599.0,8374.0,4969.0,4356.0,3843.0,3334.0,-13.24
+B,Mining and Quarrying,3,Average annual labour compensation per employed worker,NTD,167478.0,209787.0,373163.0,457290.0,627697.0,711728.0,793370.0,795502.0,837150.0,5.24
+B,Mining and Quarrying,4,Total annual receipts of enterprises,million NTD,17334.0,18445.0,22921.0,21767.0,23878.0,21873.0,28012.0,23690.0,37788.0,59.51
+B,Mining and Quarrying,5,Total annual expenditures of enterprises,million NTD,16895.0,17955.0,21539.0,20139.0,21349.0,19259.0,24016.0,29291.0,25387.0,-13.33
+B,Mining and Quarrying,6,Total annual output of enterprises,million NTD,16677.0,18066.0,22130.0,21196.0,22649.0,20831.0,27014.0,22618.0,24342.0,7.62
+B,Mining and Quarrying,7,Gross value added of enterprises,million NTD,10076.0,8677.0,10814.0,10329.0,10084.0,7802.0,9839.0,5601.0,4438.0,-20.76
+B,Mining and Quarrying,8,Net assets in actual use (year-end),million NTD,9973.0,19032.0,31568.0,46749.0,38463.0,21953.0,18424.0,37432.0,67927.0,81.47
+B,Mining and Quarrying,9,Net fixed assets in actual use (year-end),million NTD,6310.0,14321.0,22109.0,24981.0,23879.0,16878.0,13816.0,14956.0,17011.0,13.74
+B,Mining and Quarrying,10(1),Average number of employees per enterprise,persons,42.4,31.5,16.9,12.8,10.3,10.0,10.1,13.3,11.9,-10.15
+B,Mining and Quarrying,10(2),Average assets in actual use per enterprise,thousand NTD,10587.0,21627.0,32747.0,47364.0,47368.0,44172.0,42648.0,129075.0,242595.0,87.95
+B,Mining and Quarrying,11,Labour equipment ratio,thousand NTD,250.0,686.0,1938.0,3710.0,4593.0,4418.0,4230.0,9740.0,20374.0,109.18
+B,Mining and Quarrying,12,Labour productivity,thousand NTD,252.0,313.0,664.0,820.0,1204.0,1570.0,2259.0,1457.0,1331.0,-8.65
+B,Mining and Quarrying,13(1),Gross value added per NTD of assets in actual use,NTD,1.01,0.46,0.34,0.22,0.26,0.36,0.53,0.15,0.07,-56.33
+B,Mining and Quarrying,13(2),Gross value added per NTD of fixed assets in actual use,NTD,1.6,0.61,0.49,0.41,0.42,0.46,0.71,0.37,0.26,-30.34
+B,Mining and Quarrying,14,Labour compensation as % of total expenditures,%,39.61,32.41,28.23,28.61,23.87,17.94,14.13,10.3,10.57,0.27
+B,Mining and Quarrying,15(1),Value-added ratio,%,60.42,48.03,48.87,48.73,44.52,37.45,36.42,24.76,18.23,-6.53
+B,Mining and Quarrying,15(2),Profit ratio,%,2.53,2.66,6.03,7.48,10.59,11.95,14.27,-23.64,32.82,56.46
+B,Mining and Quarrying,15(3),Asset turnover ratio,%,172.58,96.31,71.66,46.26,61.72,98.68,151.56,62.88,36.32,-26.56
+D,Electricity and Gas Supply,1,Number of enterprises (year-end),establishments,53.0,83.0,91.0,120.0,135.0,166.0,176.0,675.0,2260.0,234.81
+D,Electricity and Gas Supply,2,Number of employees (year-end),persons,22600.0,31111.0,36329.0,35270.0,32297.0,32147.0,32572.0,33488.0,39166.0,16.96
+D,Electricity and Gas Supply,3,Average annual labour compensation per employed worker,NTD,270002.0,375197.0,741695.0,1133651.0,1238863.0,1205791.0,1260374.0,1255792.0,1198012.0,-4.6
+D,Electricity and Gas Supply,4,Total annual receipts of enterprises,million NTD,110635.0,143591.0,210589.0,292910.0,371112.0,526360.0,742398.0,758766.0,865621.0,14.08
+D,Electricity and Gas Supply,5,Total annual expenditures of enterprises,million NTD,87443.0,113761.0,177469.0,254154.0,340872.0,511938.0,765535.0,693137.0,818835.0,18.13
+D,Electricity and Gas Supply,6,Total annual output of enterprises,million NTD,108540.0,140183.0,199627.0,282993.0,333509.0,416673.0,594945.0,629822.0,695778.0,10.47
+D,Electricity and Gas Supply,7,Gross value added of enterprises,million NTD,55801.0,89890.0,117850.0,167397.0,176060.0,149507.0,136210.0,241648.0,248016.0,2.64
+D,Electricity and Gas Supply,8,Net assets in actual use (year-end),million NTD,355638.0,535316.0,657823.0,1029652.0,1392811.0,1684054.0,1913793.0,2326802.0,2941599.0,26.42
+D,Electricity and Gas Supply,9,Net fixed assets in actual use (year-end),million NTD,325355.0,493852.0,597289.0,956267.0,1284775.0,1520601.0,1729215.0,1748301.0,2179279.0,24.65
+D,Electricity and Gas Supply,10(1),Average number of employees per enterprise,persons,426.4,374.8,399.2,293.9,239.2,193.7,185.1,49.6,17.3,-65.07
+D,Electricity and Gas Supply,10(2),Average assets in actual use per enterprise,thousand NTD,6710151.0,6449590.0,7228823.0,8580434.0,10317115.0,10144904.0,10873824.0,3447114.0,1301592.0,-62.24
+D,Electricity and Gas Supply,11,Labour equipment ratio,thousand NTD,15736.0,17207.0,18107.0,29193.0,43125.0,52386.0,58756.0,69482.0,75106.0,8.09
+D,Electricity and Gas Supply,12,Labour productivity,thousand NTD,2469.0,2889.0,3244.0,4746.0,5451.0,4651.0,4182.0,7216.0,6332.0,-12.25
+D,Electricity and Gas Supply,13(1),Gross value added per NTD of assets in actual use,NTD,0.16,0.17,0.18,0.16,0.13,0.09,0.07,0.1,0.08,-18.82
+D,Electricity and Gas Supply,13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.17,0.18,0.2,0.18,0.14,0.1,0.08,0.14,0.11,-17.66
+D,Electricity and Gas Supply,14,Labour compensation as % of total expenditures,%,6.98,10.26,15.18,15.73,11.73,7.57,5.36,6.06,5.5,-0.56
+D,Electricity and Gas Supply,15(1),Value-added ratio,%,51.41,64.12,59.03,59.15,52.79,35.88,22.89,38.37,35.65,-2.72
+D,Electricity and Gas Supply,15(2),Profit ratio,%,20.96,20.77,15.73,13.23,8.15,2.74,-3.12,8.65,5.4,-3.25
+D,Electricity and Gas Supply,15(3),Asset turnover ratio,%,30.79,26.33,30.58,28.07,26.21,30.6,38.35,32.05,28.92,-3.13
+E,Water Supply and Remediation,1,Number of enterprises (year-end),establishments,546.0,894.0,1058.0,2007.0,2988.0,4008.0,5003.0,5306.0,6059.0,14.19
+E,Water Supply and Remediation,2,Number of employees (year-end),persons,18177.0,21918.0,23084.0,26134.0,25220.0,27809.0,29978.0,35742.0,43283.0,21.1
+E,Water Supply and Remediation,3,Average annual labour compensation per employed worker,NTD,150182.0,184442.0,404588.0,603265.0,738986.0,723943.0,702408.0,672219.0,688542.0,2.43
+E,Water Supply and Remediation,4,Total annual receipts of enterprises,million NTD,15149.0,25764.0,29564.0,51751.0,65137.0,90399.0,125386.0,155978.0,223034.0,42.99
+E,Water Supply and Remediation,5,Total annual expenditures of enterprises,million NTD,15676.0,23540.0,27483.0,48525.0,60024.0,83204.0,113291.0,139092.0,206322.0,48.33
+E,Water Supply and Remediation,6,Total annual output of enterprises,million NTD,13165.0,24861.0,27819.0,49510.0,62279.0,86121.0,120696.0,149434.0,211071.0,41.25
+E,Water Supply and Remediation,7,Gross value added of enterprises,million NTD,5161.0,9864.0,17031.0,30282.0,35138.0,39364.0,46480.0,56116.0,65326.0,16.41
+E,Water Supply and Remediation,8,Net assets in actual use (year-end),million NTD,61912.0,73239.0,145401.0,287163.0,368110.0,443941.0,510894.0,640830.0,767998.0,19.84
+E,Water Supply and Remediation,9,Net fixed assets in actual use (year-end),million NTD,39305.0,62000.0,128688.0,261260.0,324611.0,397098.0,449234.0,530147.0,635121.0,19.8
+E,Water Supply and Remediation,10(1),Average number of employees per enterprise,persons,33.3,24.5,21.8,13.0,8.4,6.9,6.0,6.7,7.1,6.05
+E,Water Supply and Remediation,10(2),Average assets in actual use per enterprise,thousand NTD,113392.0,81923.0,137430.0,143081.0,123196.0,110764.0,102117.0,120775.0,126753.0,4.95
+E,Water Supply and Remediation,11,Labour equipment ratio,thousand NTD,3406.0,3342.0,6299.0,10988.0,14596.0,15964.0,17042.0,17929.0,17744.0,-1.03
+E,Water Supply and Remediation,12,Labour productivity,thousand NTD,284.0,450.0,738.0,1159.0,1393.0,1415.0,1550.0,1570.0,1509.0,-3.89
+E,Water Supply and Remediation,13(1),Gross value added per NTD of assets in actual use,NTD,0.08,0.13,0.12,0.11,0.1,0.09,0.09,0.09,0.09,-2.87
+E,Water Supply and Remediation,13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.13,0.16,0.13,0.12,0.11,0.1,0.1,0.11,0.1,-2.82
+E,Water Supply and Remediation,14,Labour compensation as % of total expenditures,%,17.41,17.17,33.98,32.49,29.62,23.12,17.58,16.15,13.36,-2.79
+E,Water Supply and Remediation,15(1),Value-added ratio,%,39.2,39.68,61.22,61.16,56.42,45.71,38.51,37.55,30.95,-6.6
+E,Water Supply and Remediation,15(2),Profit ratio,%,-3.48,8.63,7.04,6.23,7.85,7.96,9.65,10.83,7.49,-3.34
+E,Water Supply and Remediation,15(3),Asset turnover ratio,%,23.67,34.46,20.07,17.65,17.21,19.92,24.05,23.57,28.12,4.55
+C,Manufacturing,1,Number of enterprises (year-end),establishments,91174.0,113258.0,140457.0,154557.0,141376.0,148017.0,157243.0,161337.0,165610.0,2.65
+C,Manufacturing,2,Number of employees (year-end),persons,2196561.0,2748256.0,2665071.0,2523916.0,2426791.0,2695984.0,2789018.0,2964970.0,3117210.0,5.13
+C,Manufacturing,3,Average annual labour compensation per employed worker,NTD,119977.0,171457.0,282385.0,422139.0,488353.0,560194.0,629146.0,708863.0,882008.0,24.43
+C,Manufacturing,4,Total annual receipts of enterprises,million NTD,2126323.0,3513480.0,5313884.0,7963548.0,10571633.0,20506965.0,27358534.0,27150651.0,34454737.0,26.9
+C,Manufacturing,5,Total annual expenditures of enterprises,million NTD,2066685.0,3281782.0,4937103.0,7437926.0,10194000.0,18841001.0,26037048.0,24846873.0,30408198.0,22.38
+C,Manufacturing,6,Total annual output of enterprises,million NTD,2040079.0,3342677.0,4947395.0,7243853.0,7922983.0,13141877.0,22456293.0,17959478.0,22586712.0,25.76
+C,Manufacturing,7,Gross value added of enterprises,million NTD,536461.0,944621.0,1610722.0,2272141.0,2238779.0,3334521.0,4302351.0,5582931.0,7900571.0,41.51
+C,Manufacturing,8,Net assets in actual use (year-end),million NTD,2051477.0,2984620.0,6003652.0,10093269.0,16111047.0,21993595.0,27082870.0,34369929.0,44907428.0,30.66
+C,Manufacturing,9,Net fixed assets in actual use (year-end),million NTD,979389.0,1425177.0,3373922.0,5236258.0,7567116.0,8719436.0,9359551.0,11083208.0,13836099.0,24.84
+C,Manufacturing,10(1),Average number of employees per enterprise,persons,24.1,24.3,19.0,16.3,17.2,18.2,17.7,18.4,18.8,2.42
+C,Manufacturing,10(2),Average assets in actual use per enterprise,thousand NTD,22501.0,26352.0,42744.0,65305.0,113959.0,148588.0,172236.0,213032.0,271164.0,27.29
+C,Manufacturing,11,Labour equipment ratio,thousand NTD,934.0,1086.0,2253.0,3999.0,6639.0,8158.0,9711.0,11592.0,14406.0,24.28
+C,Manufacturing,12,Labour productivity,thousand NTD,244.0,344.0,604.0,900.0,923.0,1237.0,1543.0,1883.0,2535.0,34.63
+C,Manufacturing,13(1),Gross value added per NTD of assets in actual use,NTD,0.26,0.32,0.27,0.23,0.14,0.15,0.16,0.16,0.18,8.3
+C,Manufacturing,13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.55,0.66,0.48,0.43,0.3,0.38,0.46,0.5,0.57,13.36
+C,Manufacturing,14,Labour compensation as % of total expenditures,%,12.75,14.36,15.24,14.32,11.41,7.82,6.6,8.27,8.83,0.56
+C,Manufacturing,15(1),Value-added ratio,%,26.3,28.26,32.56,31.37,28.26,25.37,19.16,31.09,34.98,3.89
+C,Manufacturing,15(2),Profit ratio,%,2.8,6.59,7.09,6.6,3.57,8.12,4.83,8.49,11.74,3.25
+C,Manufacturing,15(3),Asset turnover ratio,%,101.64,116.0,86.37,76.67,63.12,89.69,98.13,76.24,73.0,-3.24
+F,Construction,1,Number of enterprises (year-end),establishments,12541.0,14480.0,25084.0,48236.0,55579.0,73360.0,86372.0,108669.0,144864.0,33.31
+F,Construction,2,Number of employees (year-end),persons,422930.0,354460.0,453952.0,537446.0,454969.0,479357.0,508202.0,522487.0,571467.0,9.37
+F,Construction,3,Average annual labour compensation per employed worker,NTD,83146.0,131703.0,256479.0,417675.0,457774.0,501455.0,542028.0,591511.0,681660.0,15.24
+F,Construction,4,Total annual receipts of enterprises,million NTD,167870.0,191390.0,539867.0,978115.0,1120641.0,1495573.0,1916433.0,2264237.0,3211715.0,41.85
+F,Construction,5,Total annual expenditures of enterprises,million NTD,158344.0,183068.0,501636.0,907819.0,1086608.0,1369437.0,1734544.0,2098386.0,2950866.0,40.63
+F,Construction,6,Total annual output of enterprises,million NTD,172763.0,195687.0,527609.0,942694.0,855475.0,1074694.0,1399280.0,1522290.0,2133731.0,40.17
+F,Construction,7,Gross value added of enterprises,million NTD,51454.0,60338.0,169765.0,326876.0,248368.0,362358.0,460065.0,494155.0,670601.0,35.71
+F,Construction,8,Net assets in actual use (year-end),million NTD,174867.0,232571.0,745536.0,1442256.0,1589081.0,1798473.0,1857785.0,2335404.0,3356364.0,43.72
+F,Construction,9,Net fixed assets in actual use (year-end),million NTD,41934.0,56645.0,294655.0,576740.0,593155.0,435030.0,517636.0,706640.0,928295.0,31.37
+F,Construction,10(1),Average number of employees per enterprise,persons,33.7,24.5,18.1,11.1,8.2,6.5,5.9,4.8,3.9,-17.95
+F,Construction,10(2),Average assets in actual use per enterprise,thousand NTD,13944.0,16062.0,29722.0,29900.0,28591.0,24516.0,21509.0,21491.0,23169.0,7.81
+F,Construction,11,Labour equipment ratio,thousand NTD,413.0,656.0,1642.0,2684.0,3493.0,3752.0,3656.0,4470.0,5873.0,31.39
+F,Construction,12,Labour productivity,thousand NTD,122.0,170.0,374.0,608.0,546.0,756.0,905.0,946.0,1173.0,24.0
+F,Construction,13(1),Gross value added per NTD of assets in actual use,NTD,0.29,0.26,0.23,0.23,0.16,0.2,0.25,0.21,0.2,-5.57
+F,Construction,13(2),Gross value added per NTD of fixed assets in actual use,NTD,1.23,1.07,0.58,0.57,0.42,0.83,0.89,0.7,0.72,3.3
+F,Construction,14,Labour compensation as % of total expenditures,%,22.21,25.5,23.21,24.73,17.8,16.1,14.43,13.3,11.55,-1.75
+F,Construction,15(1),Value-added ratio,%,29.78,30.83,32.18,34.67,29.03,33.72,32.88,32.46,31.43,-1.03
+F,Construction,15(2),Profit ratio,%,5.67,4.35,7.08,7.19,3.04,8.43,9.49,7.32,8.12,0.8
+F,Construction,15(3),Asset turnover ratio,%,95.28,81.27,71.42,66.92,69.46,82.09,101.93,96.18,94.94,-1.24
+G,Wholesale and Retail Trade,1,Number of enterprises (year-end),establishments,293782.0,323867.0,371763.0,413153.0,438163.0,490017.0,495699.0,509935.0,547188.0,7.31
+G,Wholesale and Retail Trade,2,Number of employees (year-end),persons,868442.0,951293.0,1272488.0,1645515.0,1795799.0,1889924.0,1912462.0,2010065.0,2111072.0,5.03
+G,Wholesale and Retail Trade,3,Average annual labour compensation per employed worker,NTD,87407.0,127011.0,220915.0,355648.0,444641.0,465103.0,497782.0,532243.0,606730.0,13.99
+G,Wholesale and Retail Trade,4,Total annual receipts of enterprises,million NTD,985902.0,1570142.0,3276274.0,6133939.0,7919497.0,11620362.0,13132169.0,13022731.0,16401750.0,25.95
+G,Wholesale and Retail Trade,5,Total annual expenditures of enterprises,million NTD,955977.0,1508451.0,3105289.0,5851750.0,7404972.0,10937286.0,12337024.0,12137506.0,15242942.0,25.59
+G,Wholesale and Retail Trade,6,Total annual output of enterprises,million NTD,210096.0,317283.0,706066.0,1427198.0,1826090.0,2448675.0,2945440.0,3113540.0,3716763.0,19.37
+G,Wholesale and Retail Trade,7,Gross value added of enterprises,million NTD,138117.0,219237.0,551221.0,1072094.0,1281228.0,1606590.0,1872641.0,2066247.0,2509326.0,21.44
+G,Wholesale and Retail Trade,8,Net assets in actual use (year-end),million NTD,794134.0,890222.0,3063086.0,5985338.0,7598452.0,7745122.0,8836167.0,10943476.0,14621666.0,33.61
+G,Wholesale and Retail Trade,9,Net fixed assets in actual use (year-end),million NTD,435433.0,432995.0,1974999.0,3420293.0,4368944.0,4021897.0,4669008.0,5483801.0,7131507.0,30.05
+G,Wholesale and Retail Trade,10(1),Average number of employees per enterprise,persons,3.0,2.9,3.4,4.0,4.1,3.9,3.9,3.9,3.9,-2.13
+G,Wholesale and Retail Trade,10(2),Average assets in actual use per enterprise,thousand NTD,2703.0,2749.0,8239.0,14487.0,17342.0,15806.0,17826.0,21461.0,26721.0,24.51
+G,Wholesale and Retail Trade,11,Labour equipment ratio,thousand NTD,914.0,936.0,2407.0,3637.0,4231.0,4098.0,4620.0,5444.0,6926.0,27.22
+G,Wholesale and Retail Trade,12,Labour productivity,thousand NTD,159.0,230.0,433.0,652.0,713.0,850.0,979.0,1028.0,1189.0,15.66
+G,Wholesale and Retail Trade,13(1),Gross value added per NTD of assets in actual use,NTD,0.17,0.25,0.18,0.18,0.17,0.21,0.21,0.19,0.17,-9.1
+G,Wholesale and Retail Trade,13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.32,0.51,0.28,0.31,0.29,0.4,0.4,0.38,0.35,-6.62
+G,Wholesale and Retail Trade,14,Labour compensation as % of total expenditures,%,7.94,8.01,9.05,10.0,8.15,6.4,6.32,7.25,6.81,-0.44
+G,Wholesale and Retail Trade,15(1),Value-added ratio,%,65.74,69.1,78.07,75.12,70.16,65.61,63.58,66.36,67.51,1.15
+G,Wholesale and Retail Trade,15(2),Profit ratio,%,3.04,3.93,5.22,4.6,6.5,5.88,6.05,6.8,7.07,0.27
+G,Wholesale and Retail Trade,15(3),Asset turnover ratio,%,122.96,175.28,105.63,101.52,102.66,148.44,146.81,117.62,110.16,-7.46
+I,Accommodation and Food Service,1,Number of enterprises (year-end),establishments,19140.0,27423.0,39766.0,40693.0,62472.0,88739.0,112365.0,144656.0,168184.0,16.26
+I,Accommodation and Food Service,2,Number of employees (year-end),persons,106251.0,141509.0,210068.0,240219.0,252867.0,323692.0,418809.0,598173.0,689543.0,15.27
+I,Accommodation and Food Service,3,Average annual labour compensation per employed worker,NTD,70747.0,110445.0,188014.0,282396.0,395153.0,366502.0,390089.0,412119.0,415947.0,0.93
+I,Accommodation and Food Service,4,Total annual receipts of enterprises,million NTD,35111.0,63736.0,152397.0,239271.0,329071.0,391356.0,561235.0,878340.0,855638.0,-2.58
+I,Accommodation and Food Service,5,Total annual expenditures of enterprises,million NTD,33174.0,57514.0,136171.0,217323.0,285668.0,326379.0,461787.0,749596.0,774925.0,3.38
+I,Accommodation and Food Service,6,Total annual output of enterprises,million NTD,32998.0,59410.0,142925.0,226458.0,310173.0,373742.0,543358.0,851135.0,808802.0,-4.97
+I,Accommodation and Food Service,7,Gross value added of enterprises,million NTD,15131.0,28740.0,70978.0,112806.0,144325.0,182601.0,278279.0,403644.0,386714.0,-4.19
+I,Accommodation and Food Service,8,Net assets in actual use (year-end),million NTD,82249.0,122216.0,443055.0,552937.0,745247.0,832128.0,1119174.0,1646854.0,2195680.0,33.33
+I,Accommodation and Food Service,9,Net fixed assets in actual use (year-end),million NTD,72016.0,103755.0,394652.0,455184.0,635689.0,673494.0,929000.0,1344861.0,1715954.0,27.59
+I,Accommodation and Food Service,10(1),Average number of employees per enterprise,persons,5.6,5.2,5.3,5.9,4.0,3.6,3.7,4.1,4.1,-0.85
+I,Accommodation and Food Service,10(2),Average assets in actual use per enterprise,thousand NTD,4297.0,4457.0,11142.0,13588.0,11929.0,9377.0,9960.0,11385.0,13055.0,14.67
+I,Accommodation and Food Service,11,Labour equipment ratio,thousand NTD,774.0,864.0,2109.0,2302.0,2947.0,2571.0,2672.0,2753.0,3184.0,15.66
+I,Accommodation and Food Service,12,Labour productivity,thousand NTD,142.0,203.0,338.0,470.0,571.0,564.0,664.0,675.0,561.0,-16.89
+I,Accommodation and Food Service,13(1),Gross value added per NTD of assets in actual use,NTD,0.18,0.24,0.16,0.2,0.19,0.22,0.25,0.25,0.18,-28.14
+I,Accommodation and Food Service,13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.21,0.28,0.18,0.25,0.23,0.27,0.3,0.3,0.23,-24.92
+I,Accommodation and Food Service,14,Labour compensation as % of total expenditures,%,22.66,27.17,29.0,31.21,23.28,29.59,29.23,26.41,28.71,2.3
+I,Accommodation and Food Service,15(1),Value-added ratio,%,45.85,48.38,49.66,49.81,46.53,48.86,51.21,47.42,47.81,0.39
+I,Accommodation and Food Service,15(2),Profit ratio,%,5.52,9.76,10.65,9.17,13.19,16.6,17.72,14.66,9.43,-5.23
+I,Accommodation and Food Service,15(3),Asset turnover ratio,%,41.73,51.46,33.59,42.52,43.54,46.17,49.4,52.87,37.67,-15.2
+H,Transportation and Storage,1,Number of enterprises (year-end),establishments,14790.0,34453.0,46098.0,61418.0,63384.0,59453.0,54614.0,47835.0,46420.0,-2.96
+H,Transportation and Storage,2,Number of employees (year-end),persons,266291.0,298858.0,309433.0,356905.0,364182.0,361140.0,356077.0,377439.0,383245.0,1.54
+H,Transportation and Storage,3,Average annual labour compensation per employed worker,NTD,149480.0,203897.0,392599.0,511857.0,608081.0,632103.0,706004.0,762666.0,824241.0,8.07
+H,Transportation and Storage,4,Total annual receipts of enterprises,million NTD,139482.0,244678.0,429774.0,679518.0,846585.0,1151678.0,1326127.0,1438149.0,2395587.0,66.57
+H,Transportation and Storage,5,Total annual expenditures of enterprises,million NTD,131930.0,230013.0,387801.0,628724.0,807416.0,1072067.0,1247766.0,1342212.0,1677267.0,24.96
+H,Transportation and Storage,6,Total annual output of enterprises,million NTD,135808.0,235987.0,406401.0,649094.0,794394.0,1056244.0,1263837.0,1330633.0,1722233.0,29.43
+H,Transportation and Storage,7,Gross value added of enterprises,million NTD,66103.0,109112.0,215014.0,307695.0,328299.0,325597.0,412559.0,509326.0,816333.0,60.28
+H,Transportation and Storage,8,Net assets in actual use (year-end),million NTD,320387.0,519355.0,929177.0,1488819.0,2781238.0,4318327.0,4598039.0,5799548.0,7484743.0,29.06
+H,Transportation and Storage,9,Net fixed assets in actual use (year-end),million NTD,347456.0,394717.0,713915.0,1114206.0,2094188.0,3461310.0,3627758.0,4275002.0,5149238.0,20.45
+H,Transportation and Storage,10(1),Average number of employees per enterprise,persons,18.0,8.7,6.7,5.8,5.7,6.1,6.5,7.9,8.3,4.63
+H,Transportation and Storage,10(2),Average assets in actual use per enterprise,thousand NTD,21662.0,15074.0,20157.0,24241.0,43879.0,72634.0,84192.0,121241.0,161240.0,32.99
+H,Transportation and Storage,11,Labour equipment ratio,thousand NTD,1203.0,1738.0,3003.0,4171.0,7637.0,11957.0,12913.0,15366.0,19530.0,27.1
+H,Transportation and Storage,12,Labour productivity,thousand NTD,248.0,365.0,695.0,862.0,901.0,902.0,1159.0,1349.0,2130.0,57.89
+H,Transportation and Storage,13(1),Gross value added per NTD of assets in actual use,NTD,0.21,0.21,0.23,0.21,0.12,0.08,0.09,0.09,0.11,24.2
+H,Transportation and Storage,13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.19,0.28,0.3,0.28,0.16,0.09,0.11,0.12,0.16,33.06
+H,Transportation and Storage,14,Labour compensation as % of total expenditures,%,30.17,26.49,31.33,29.06,23.06,18.56,17.89,19.52,17.11,-2.41
+H,Transportation and Storage,15(1),Value-added ratio,%,48.67,46.24,52.91,47.4,41.33,30.83,32.64,38.28,47.4,9.12
+H,Transportation and Storage,15(2),Profit ratio,%,5.41,5.99,9.77,7.47,4.63,6.91,5.91,6.67,29.99,23.32
+H,Transportation and Storage,15(3),Asset turnover ratio,%,43.79,47.51,43.9,43.85,29.14,25.32,27.76,24.1,26.47,2.37
+J,"Publishing, Audio-Visual and Information",1,Number of enterprises (year-end),establishments,2480.0,4743.0,3762.0,6309.0,8701.0,11904.0,13165.0,16430.0,23100.0,40.6
+J,"Publishing, Audio-Visual and Information",2,Number of employees (year-end),persons,60754.0,71064.0,92790.0,127353.0,163833.0,179322.0,191660.0,225834.0,282718.0,25.19
+J,"Publishing, Audio-Visual and Information",3,Average annual labour compensation per employed worker,NTD,169542.0,270683.0,490163.0,733756.0,835768.0,785844.0,816691.0,866522.0,995072.0,14.84
+J,"Publishing, Audio-Visual and Information",4,Total annual receipts of enterprises,million NTD,45103.0,87043.0,187919.0,347614.0,717756.0,798619.0,910084.0,1092406.0,1193503.0,9.25
+J,"Publishing, Audio-Visual and Information",5,Total annual expenditures of enterprises,million NTD,37873.0,64504.0,156770.0,286491.0,628575.0,718795.0,762461.0,961082.0,1044391.0,8.67
+J,"Publishing, Audio-Visual and Information",6,Total annual output of enterprises,million NTD,43504.0,82863.0,172398.0,331788.0,672543.0,712495.0,854136.0,988687.0,1107669.0,12.03
+J,"Publishing, Audio-Visual and Information",7,Gross value added of enterprises,million NTD,29355.0,59465.0,110656.0,209103.0,324093.0,329898.0,407853.0,461135.0,551687.0,19.64
+J,"Publishing, Audio-Visual and Information",8,Net assets in actual use (year-end),million NTD,164608.0,250417.0,394983.0,733531.0,1602589.0,1671838.0,1726795.0,2171485.0,2611519.0,20.26
+J,"Publishing, Audio-Visual and Information",9,Net fixed assets in actual use (year-end),million NTD,39612.0,162124.0,289749.0,533769.0,1028714.0,842672.0,796194.0,932885.0,1055269.0,13.12
+J,"Publishing, Audio-Visual and Information",10(1),Average number of employees per enterprise,persons,24.5,15.0,24.7,20.2,18.8,15.1,14.6,13.7,12.2,-10.96
+J,"Publishing, Audio-Visual and Information",10(2),Average assets in actual use per enterprise,thousand NTD,66374.0,52797.0,104993.0,116267.0,184184.0,140443.0,131166.0,132166.0,113053.0,-14.46
+J,"Publishing, Audio-Visual and Information",11,Labour equipment ratio,thousand NTD,2709.0,3524.0,4257.0,5760.0,9782.0,9323.0,9010.0,9615.0,9237.0,-3.93
+J,"Publishing, Audio-Visual and Information",12,Labour productivity,thousand NTD,483.0,837.0,1193.0,1642.0,1978.0,1840.0,2128.0,2042.0,1951.0,-4.46
+J,"Publishing, Audio-Visual and Information",13(1),Gross value added per NTD of assets in actual use,NTD,0.18,0.24,0.28,0.29,0.2,0.2,0.24,0.21,0.21,-0.52
+J,"Publishing, Audio-Visual and Information",13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.74,0.37,0.38,0.39,0.32,0.39,0.51,0.49,0.52,5.76
+J,"Publishing, Audio-Visual and Information",14,Labour compensation as % of total expenditures,%,27.2,29.82,29.01,32.62,21.56,19.43,20.35,20.15,26.12,5.97
+J,"Publishing, Audio-Visual and Information",15(1),Value-added ratio,%,67.48,71.76,64.19,63.02,48.19,46.3,47.75,46.64,49.81,3.17
+J,"Publishing, Audio-Visual and Information",15(2),Profit ratio,%,16.03,25.89,16.58,17.58,12.42,10.0,16.22,12.02,12.49,0.47
+J,"Publishing, Audio-Visual and Information",15(3),Asset turnover ratio,%,26.74,33.65,45.66,46.17,43.3,45.07,50.75,48.93,44.03,-4.9
+L,Real Estate,1,Number of enterprises (year-end),establishments,1952.0,1373.0,3874.0,11785.0,8701.0,15675.0,20076.0,28087.0,39635.0,41.12
+L,Real Estate,2,Number of employees (year-end),persons,19701.0,14903.0,46588.0,91404.0,63035.0,83932.0,102246.0,120293.0,153846.0,27.89
+L,Real Estate,3,Average annual labour compensation per employed worker,NTD,122938.0,190316.0,286526.0,502676.0,515133.0,557656.0,620300.0,602736.0,768380.0,27.48
+L,Real Estate,4,Total annual receipts of enterprises,million NTD,15647.0,15260.0,77593.0,209200.0,146204.0,610151.0,821459.0,999815.0,1441762.0,44.2
+L,Real Estate,5,Total annual expenditures of enterprises,million NTD,12879.0,11190.0,58430.0,176198.0,138705.0,533216.0,668148.0,880773.0,1183300.0,34.35
+L,Real Estate,6,Total annual output of enterprises,million NTD,13515.0,14104.0,73704.0,196702.0,114375.0,238664.0,410049.0,504884.0,747969.0,48.15
+L,Real Estate,7,Gross value added of enterprises,million NTD,7588.0,9444.0,43625.0,113201.0,60565.0,140160.0,259823.0,258760.0,434339.0,67.85
+L,Real Estate,8,Net assets in actual use (year-end),million NTD,80059.0,88213.0,617721.0,2308407.0,2172838.0,2218856.0,3237673.0,5317604.0,7480540.0,40.68
+L,Real Estate,9,Net fixed assets in actual use (year-end),million NTD,29860.0,29147.0,198383.0,528360.0,628908.0,804497.0,1292878.0,2335201.0,2660207.0,13.92
+L,Real Estate,10(1),Average number of employees per enterprise,persons,10.1,10.9,12.0,7.8,7.2,5.4,5.1,4.3,3.9,-9.37
+L,Real Estate,10(2),Average assets in actual use per enterprise,thousand NTD,41014.0,64248.0,159453.0,195877.0,249723.0,141554.0,161271.0,189326.0,188736.0,-0.31
+L,Real Estate,11,Labour equipment ratio,thousand NTD,4064.0,5919.0,13259.0,25255.0,34470.0,26436.0,31666.0,44205.0,48624.0,10.0
+L,Real Estate,12,Labour productivity,thousand NTD,385.0,634.0,936.0,1238.0,961.0,1670.0,2541.0,2151.0,2823.0,31.24
+L,Real Estate,13(1),Gross value added per NTD of assets in actual use,NTD,0.09,0.11,0.07,0.05,0.03,0.06,0.08,0.05,0.06,19.32
+L,Real Estate,13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.25,0.32,0.22,0.21,0.1,0.17,0.2,0.11,0.16,47.34
+L,Real Estate,14,Labour compensation as % of total expenditures,%,18.81,25.34,22.85,26.08,23.04,8.69,9.3,8.01,9.1,1.09
+L,Real Estate,15(1),Value-added ratio,%,56.15,66.96,59.19,57.55,52.95,58.73,63.36,51.25,58.07,6.82
+L,Real Estate,15(2),Profit ratio,%,17.69,26.68,24.7,15.78,5.13,12.61,18.66,11.91,17.93,6.02
+L,Real Estate,15(3),Asset turnover ratio,%,18.26,16.41,11.99,8.62,5.87,26.41,24.31,18.0,18.29,0.29
+M,"Professional, Scientific and Technical Services",1,Number of enterprises (year-end),establishments,11950.0,16332.0,14323.0,27532.0,28723.0,40779.0,47591.0,53949.0,66710.0,23.65
+M,"Professional, Scientific and Technical Services",2,Number of employees (year-end),persons,56311.0,74254.0,97256.0,158492.0,143695.0,179581.0,213295.0,286464.0,338941.0,18.32
+M,"Professional, Scientific and Technical Services",3,Average annual labour compensation per employed worker,NTD,121994.0,161779.0,327000.0,487695.0,605909.0,663863.0,676889.0,762204.0,829564.0,8.84
+M,"Professional, Scientific and Technical Services",4,Total annual receipts of enterprises,million NTD,18837.0,32368.0,89810.0,208289.0,291336.0,380214.0,510512.0,686230.0,818876.0,19.33
+M,"Professional, Scientific and Technical Services",5,Total annual expenditures of enterprises,million NTD,15891.0,28348.0,79430.0,187626.0,260664.0,329436.0,444879.0,614174.0,735155.0,19.7
+M,"Professional, Scientific and Technical Services",6,Total annual output of enterprises,million NTD,17947.0,31178.0,85919.0,201473.0,280820.0,368263.0,504246.0,662738.0,809598.0,22.16
+M,"Professional, Scientific and Technical Services",7,Gross value added of enterprises,million NTD,11042.0,18190.0,47358.0,114065.0,129086.0,176241.0,231547.0,315677.0,402031.0,27.36
+M,"Professional, Scientific and Technical Services",8,Net assets in actual use (year-end),million NTD,30162.0,48083.0,149788.0,346998.0,424705.0,552372.0,635686.0,1278394.0,1500651.0,17.39
+M,"Professional, Scientific and Technical Services",9,Net fixed assets in actual use (year-end),million NTD,22058.0,30567.0,106074.0,232422.0,241655.0,328164.0,386637.0,704232.0,800922.0,13.73
+M,"Professional, Scientific and Technical Services",10(1),Average number of employees per enterprise,persons,4.7,4.5,6.8,5.8,5.0,4.4,4.5,5.3,5.1,-4.31
+M,"Professional, Scientific and Technical Services",10(2),Average assets in actual use per enterprise,thousand NTD,2524.0,2944.0,10458.0,12603.0,14786.0,13546.0,13357.0,23696.0,22495.0,-5.07
+M,"Professional, Scientific and Technical Services",11,Labour equipment ratio,thousand NTD,536.0,648.0,1540.0,2189.0,2956.0,3076.0,2980.0,4463.0,4427.0,-0.81
+M,"Professional, Scientific and Technical Services",12,Labour productivity,thousand NTD,196.0,245.0,487.0,720.0,898.0,981.0,1086.0,1102.0,1186.0,7.62
+M,"Professional, Scientific and Technical Services",13(1),Gross value added per NTD of assets in actual use,NTD,0.37,0.38,0.32,0.33,0.3,0.32,0.36,0.25,0.27,8.49
+M,"Professional, Scientific and Technical Services",13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.5,0.6,0.45,0.49,0.53,0.54,0.6,0.45,0.5,11.98
+M,"Professional, Scientific and Technical Services",14,Labour compensation as % of total expenditures,%,43.23,42.38,40.04,41.2,29.9,33.29,29.96,32.61,34.19,1.58
+M,"Professional, Scientific and Technical Services",15(1),Value-added ratio,%,61.53,58.34,55.12,56.62,45.97,47.86,45.92,47.63,49.66,2.03
+M,"Professional, Scientific and Technical Services",15(2),Profit ratio,%,15.64,12.42,11.56,9.92,10.53,13.36,12.86,10.5,10.22,-0.28
+M,"Professional, Scientific and Technical Services",15(3),Asset turnover ratio,%,61.78,66.3,58.7,58.94,67.26,67.7,79.0,50.56,52.62,2.06
+N,Support Services,1,Number of enterprises (year-end),establishments,5501.0,7431.0,14387.0,15100.0,17402.0,20730.0,21821.0,24744.0,29631.0,19.75
+N,Support Services,2,Number of employees (year-end),persons,26792.0,32160.0,79684.0,104591.0,130357.0,261560.0,352997.0,398669.0,462034.0,15.89
+N,Support Services,3,Average annual labour compensation per employed worker,NTD,109313.0,147939.0,225661.0,361855.0,439931.0,391372.0,395599.0,442421.0,471785.0,6.64
+N,Support Services,4,Total annual receipts of enterprises,million NTD,14093.0,18369.0,44276.0,90452.0,151992.0,236932.0,311119.0,445786.0,489411.0,9.79
+N,Support Services,5,Total annual expenditures of enterprises,million NTD,12598.0,16451.0,38535.0,81170.0,135950.0,208330.0,278805.0,406120.0,453355.0,11.63
+N,Support Services,6,Total annual output of enterprises,million NTD,12849.0,16809.0,42512.0,86715.0,142923.0,216170.0,295759.0,412005.0,462136.0,12.17
+N,Support Services,7,Gross value added of enterprises,million NTD,9262.0,10498.0,28024.0,56626.0,82888.0,141910.0,192057.0,259399.0,293507.0,13.15
+N,Support Services,8,Net assets in actual use (year-end),million NTD,24680.0,40344.0,113965.0,210194.0,261990.0,404973.0,482394.0,678157.0,820157.0,20.94
+N,Support Services,9,Net fixed assets in actual use (year-end),million NTD,16499.0,22260.0,88994.0,149544.0,169130.0,261703.0,321840.0,428931.0,504903.0,17.71
+N,Support Services,10(1),Average number of employees per enterprise,persons,4.9,4.3,5.5,6.9,7.5,12.6,16.2,16.1,15.6,-3.22
+N,Support Services,10(2),Average assets in actual use per enterprise,thousand NTD,4486.0,5429.0,7921.0,13920.0,15055.0,19536.0,22107.0,27407.0,27679.0,0.99
+N,Support Services,11,Labour equipment ratio,thousand NTD,921.0,1254.0,1430.0,2010.0,2010.0,1548.0,1367.0,1701.0,1775.0,4.35
+N,Support Services,12,Labour productivity,thousand NTD,346.0,326.0,352.0,541.0,636.0,543.0,544.0,651.0,635.0,-2.46
+N,Support Services,13(1),Gross value added per NTD of assets in actual use,NTD,0.38,0.26,0.25,0.27,0.32,0.35,0.4,0.38,0.36,-6.44
+N,Support Services,13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.56,0.47,0.31,0.38,0.49,0.54,0.6,0.6,0.58,-3.88
+N,Support Services,14,Labour compensation as % of total expenditures,%,23.25,28.92,46.66,46.63,37.83,47.77,48.97,42.27,46.65,4.38
+N,Support Services,15(1),Value-added ratio,%,72.08,62.45,65.92,65.3,57.99,65.65,64.94,62.96,63.51,0.55
+N,Support Services,15(2),Profit ratio,%,10.61,10.44,12.97,10.26,10.56,12.07,10.39,8.9,7.37,-1.53
+N,Support Services,15(3),Asset turnover ratio,%,54.58,43.55,38.16,42.2,56.39,56.8,63.14,64.51,57.72,-6.79
+K,Finance and Insurance,1,Number of enterprises (year-end),establishments,1538.0,1681.0,3184.0,4508.0,6483.0,9955.0,13801.0,20353.0,33313.0,63.68
+K,Finance and Insurance,2,Number of employees (year-end),persons,108239.0,156390.0,249734.0,326528.0,370555.0,376646.0,380119.0,397027.0,423765.0,6.73
+K,Finance and Insurance,3,Average annual labour compensation per employed worker,NTD,261233.0,335845.0,547019.0,735801.0,894082.0,991113.0,1058715.0,1168310.0,1424607.0,21.94
+K,Finance and Insurance,4,Total annual receipts of enterprises,million NTD,368193.0,557317.0,1617355.0,2661343.0,3884875.0,5822444.0,6370032.0,8579016.0,10168188.0,18.52
+K,Finance and Insurance,5,Total annual expenditures of enterprises,million NTD,309215.0,506117.0,1463275.0,2374780.0,3607990.0,5367978.0,5569533.0,7395628.0,7699241.0,4.11
+K,Finance and Insurance,6,Total annual output of enterprises,million NTD,183147.0,268390.0,655306.0,1203201.0,1477491.0,1829431.0,2099498.0,2505572.0,3953004.0,57.77
+K,Finance and Insurance,7,Gross value added of enterprises,million NTD,130346.0,138484.0,351892.0,632940.0,734111.0,1257109.0,1461939.0,1903541.0,3237218.0,70.06
+K,Finance and Insurance,8,Net assets in actual use (year-end),million NTD,3324070.0,8661343.0,18012297.0,27617222.0,39414763.0,59409831.0,79785779.0,110206055.0,150703076.0,36.75
+K,Finance and Insurance,9,Net fixed assets in actual use (year-end),million NTD,46211.0,134435.0,447360.0,812293.0,1101735.0,1255693.0,1436820.0,1861808.0,2529449.0,35.86
+K,Finance and Insurance,10(1),Average number of employees per enterprise,persons,70.4,93.0,78.4,72.4,57.2,37.8,27.5,19.5,12.7,-34.79
+K,Finance and Insurance,10(2),Average assets in actual use per enterprise,thousand NTD,2161294.0,5152494.0,5657129.0,6126269.0,6079711.0,5967838.0,5781159.0,5414733.0,4523852.0,-16.45
+K,Finance and Insurance,11,Labour equipment ratio,thousand NTD,30710.0,55383.0,72126.0,84578.0,106367.0,157734.0,209897.0,277578.0,355629.0,28.12
+K,Finance and Insurance,12,Labour productivity,thousand NTD,1204.0,886.0,1409.0,1938.0,1981.0,3338.0,3846.0,4794.0,7639.0,59.35
+K,Finance and Insurance,13(1),Gross value added per NTD of assets in actual use,NTD,0.04,0.02,0.02,0.02,0.02,0.02,0.02,0.02,0.02,24.38
+K,Finance and Insurance,13(2),Gross value added per NTD of fixed assets in actual use,NTD,2.82,1.03,0.79,0.78,0.67,1.0,1.02,1.02,1.28,25.17
+K,Finance and Insurance,14,Labour compensation as % of total expenditures,%,9.14,10.38,9.34,10.12,9.13,6.91,7.19,6.24,7.55,1.31
+K,Finance and Insurance,15(1),Value-added ratio,%,71.17,51.6,53.7,52.6,49.69,68.72,69.63,75.97,81.89,5.92
+K,Finance and Insurance,15(2),Profit ratio,%,16.02,9.19,9.53,10.77,7.13,7.81,12.57,13.79,24.28,10.49
+K,Finance and Insurance,15(3),Asset turnover ratio,%,10.84,6.28,8.76,9.48,9.7,9.57,7.75,7.64,6.63,-1.01
+P,Education,1,Number of enterprises (year-end),establishments,,,,,,17384.0,20695.0,23169.0,25753.0,11.15
+P,Education,2,Number of employees (year-end),persons,,,,,,111186.0,124678.0,148977.0,172351.0,15.69
+P,Education,3,Average annual labour compensation per employed worker,NTD,,,,,,353575.0,388977.0,435480.0,479420.0,10.09
+P,Education,4,Total annual receipts of enterprises,million NTD,,,,,,78368.0,108918.0,138586.0,145218.0,4.79
+P,Education,5,Total annual expenditures of enterprises,million NTD,,,,,,63969.0,92434.0,118766.0,131626.0,10.83
+P,Education,6,Total annual output of enterprises,million NTD,,,,,,77848.0,106742.0,129693.0,129064.0,-0.49
+P,Education,7,Gross value added of enterprises,million NTD,,,,,,57540.0,67970.0,84122.0,87788.0,4.36
+P,Education,8,Net assets in actual use (year-end),million NTD,,,,,,360620.0,357589.0,441168.0,527599.0,19.59
+P,Education,9,Net fixed assets in actual use (year-end),million NTD,,,,,,345103.0,340105.0,403091.0,466476.0,15.72
+P,Education,10(1),Average number of employees per enterprise,persons,,,,,,6.4,6.0,6.4,6.7,4.08
+P,Education,10(2),Average assets in actual use per enterprise,thousand NTD,,,,,,20744.0,17279.0,19041.0,20487.0,7.59
+P,Education,11,Labour equipment ratio,thousand NTD,,,,,,3243.0,2868.0,2961.0,3061.0,3.38
+P,Education,12,Labour productivity,thousand NTD,,,,,,518.0,545.0,565.0,509.0,-9.91
+P,Education,13(1),Gross value added per NTD of assets in actual use,NTD,,,,,,0.16,0.19,0.19,0.17,-12.74
+P,Education,13(2),Gross value added per NTD of fixed assets in actual use,NTD,,,,,,0.17,0.2,0.21,0.19,-9.82
+P,Education,14,Labour compensation as % of total expenditures,%,,,,,,54.67,46.87,49.56,56.43,6.87
+P,Education,15(1),Value-added ratio,%,,,,,,73.91,63.68,64.86,68.02,3.16
+P,Education,15(2),Profit ratio,%,,,,,,18.37,15.13,14.3,9.36,-4.94
+P,Education,15(3),Asset turnover ratio,%,,,,,,21.66,29.88,29.56,24.6,-4.96
+Q,Health and Social Work,1,Number of enterprises (year-end),establishments,8421.0,12067.0,13651.0,17462.0,19712.0,24771.0,25998.0,28109.0,32556.0,15.82
+Q,Health and Social Work,2,Number of employees (year-end),persons,52641.0,100389.0,131122.0,188001.0,220033.0,320403.0,363707.0,420937.0,526785.0,25.15
+Q,Health and Social Work,3,Average annual labour compensation per employed worker,NTD,130137.0,231086.0,415286.0,646637.0,830960.0,785599.0,813036.0,895190.0,889378.0,-0.65
+Q,Health and Social Work,4,Total annual receipts of enterprises,million NTD,21274.0,59680.0,127719.0,291234.0,444648.0,595398.0,688443.0,842365.0,1078261.0,28.0
+Q,Health and Social Work,5,Total annual expenditures of enterprises,million NTD,18231.0,53485.0,112339.0,263675.0,401610.0,526859.0,617170.0,750487.0,984675.0,31.2
+Q,Health and Social Work,6,Total annual output of enterprises,million NTD,19683.0,56502.0,120628.0,280764.0,429047.0,524246.0,635806.0,798497.0,1018133.0,27.51
+Q,Health and Social Work,7,Gross value added of enterprises,million NTD,11625.0,32941.0,78015.0,170538.0,239037.0,290261.0,353776.0,471733.0,565132.0,19.8
+Q,Health and Social Work,8,Net assets in actual use (year-end),million NTD,54171.0,123136.0,285036.0,497631.0,705369.0,1065116.0,1300350.0,1618236.0,2135270.0,31.95
+Q,Health and Social Work,9,Net fixed assets in actual use (year-end),million NTD,46813.0,99575.0,220340.0,364259.0,494097.0,664157.0,750111.0,902374.0,1168799.0,29.52
+Q,Health and Social Work,10(1),Average number of employees per enterprise,persons,6.3,8.3,9.6,10.8,11.2,12.9,14.0,15.0,16.2,8.05
+Q,Health and Social Work,10(2),Average assets in actual use per enterprise,thousand NTD,6433.0,10204.0,20880.0,28498.0,35784.0,42999.0,50017.0,57570.0,65588.0,13.93
+Q,Health and Social Work,11,Labour equipment ratio,thousand NTD,1029.0,1226.0,2174.0,2647.0,3206.0,3324.0,3575.0,3844.0,4053.0,5.44
+Q,Health and Social Work,12,Labour productivity,thousand NTD,221.0,328.0,595.0,907.0,1086.0,906.0,973.0,1121.0,1073.0,-4.28
+Q,Health and Social Work,13(1),Gross value added per NTD of assets in actual use,NTD,0.21,0.27,0.27,0.34,0.34,0.27,0.27,0.29,0.26,-9.21
+Q,Health and Social Work,13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.25,0.33,0.35,0.47,0.48,0.44,0.47,0.52,0.48,-7.51
+Q,Health and Social Work,14,Labour compensation as % of total expenditures,%,37.58,43.37,48.47,46.11,41.14,45.93,46.14,48.28,45.95,-2.33
+Q,Health and Social Work,15(1),Value-added ratio,%,59.06,58.3,64.67,60.74,55.71,55.37,55.64,59.08,55.51,-3.57
+Q,Health and Social Work,15(2),Profit ratio,%,14.3,10.38,12.04,9.46,9.68,11.51,10.35,10.91,8.68,-2.23
+Q,Health and Social Work,15(3),Asset turnover ratio,%,37.91,46.64,42.77,56.76,61.31,51.35,48.26,48.81,47.11,-1.7
+R,"Arts, Entertainment and Recreation",1,Number of enterprises (year-end),establishments,2195.0,2643.0,5643.0,5650.0,11333.0,17919.0,17061.0,19360.0,26603.0,37.41
+R,"Arts, Entertainment and Recreation",2,Number of employees (year-end),persons,16645.0,16493.0,37501.0,57444.0,59438.0,68613.0,70548.0,82688.0,91370.0,10.5
+R,"Arts, Entertainment and Recreation",3,Average annual labour compensation per employed worker,NTD,84672.0,124814.0,202921.0,328071.0,418009.0,436291.0,432452.0,473068.0,496961.0,5.05
+R,"Arts, Entertainment and Recreation",4,Total annual receipts of enterprises,million NTD,3900.0,5201.0,23811.0,57066.0,73135.0,89733.0,97973.0,126105.0,128423.0,1.84
+R,"Arts, Entertainment and Recreation",5,Total annual expenditures of enterprises,million NTD,3690.0,4722.0,19985.0,51929.0,59672.0,78784.0,83578.0,109035.0,123506.0,13.27
+R,"Arts, Entertainment and Recreation",6,Total annual output of enterprises,million NTD,3569.0,4880.0,21397.0,50261.0,68262.0,83705.0,89482.0,114705.0,114051.0,-0.57
+R,"Arts, Entertainment and Recreation",7,Gross value added of enterprises,million NTD,2598.0,3353.0,14916.0,34566.0,42527.0,47799.0,47507.0,60549.0,52601.0,-13.13
+R,"Arts, Entertainment and Recreation",8,Net assets in actual use (year-end),million NTD,13317.0,23109.0,217310.0,280106.0,384529.0,439440.0,473279.0,606480.0,789387.0,30.16
+R,"Arts, Entertainment and Recreation",9,Net fixed assets in actual use (year-end),million NTD,11772.0,19983.0,198131.0,245862.0,333917.0,392336.0,416143.0,518875.0,677100.0,30.49
+R,"Arts, Entertainment and Recreation",10(1),Average number of employees per enterprise,persons,7.6,6.2,6.6,10.2,5.2,3.8,4.1,4.3,3.4,-19.59
+R,"Arts, Entertainment and Recreation",10(2),Average assets in actual use per enterprise,thousand NTD,6067.0,8743.0,38510.0,49576.0,33930.0,24524.0,27740.0,31326.0,29673.0,-5.28
+R,"Arts, Entertainment and Recreation",11,Labour equipment ratio,thousand NTD,800.0,1401.0,5795.0,4876.0,6469.0,6405.0,6709.0,7335.0,8639.0,17.78
+R,"Arts, Entertainment and Recreation",12,Labour productivity,thousand NTD,156.0,203.0,398.0,602.0,715.0,697.0,673.0,732.0,576.0,-21.31
+R,"Arts, Entertainment and Recreation",13(1),Gross value added per NTD of assets in actual use,NTD,0.2,0.15,0.07,0.12,0.11,0.11,0.1,0.1,0.07,-33.26
+R,"Arts, Entertainment and Recreation",13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.22,0.17,0.08,0.14,0.13,0.12,0.11,0.12,0.08,-33.42
+R,"Arts, Entertainment and Recreation",14,Labour compensation as % of total expenditures,%,38.19,43.6,38.08,36.29,27.22,33.04,31.61,30.7,29.69,-1.01
+R,"Arts, Entertainment and Recreation",15(1),Value-added ratio,%,72.79,68.71,69.71,68.77,62.3,57.1,53.09,52.79,46.12,-6.67
+R,"Arts, Entertainment and Recreation",15(2),Profit ratio,%,5.38,9.21,16.07,9.0,18.41,12.2,14.69,13.54,3.83,-9.71
+R,"Arts, Entertainment and Recreation",15(3),Asset turnover ratio,%,28.55,21.81,10.25,19.66,18.53,19.84,19.28,19.26,14.67,-4.59
+S,Other Services,1,Number of enterprises (year-end),establishments,46304.0,51528.0,54807.0,57052.0,69348.0,81724.0,92697.0,104817.0,108538.0,3.55
+S,Other Services,2,Number of employees (year-end),persons,116780.0,121699.0,139812.0,149996.0,147803.0,149053.0,160690.0,200041.0,194659.0,-2.69
+S,Other Services,3,Average annual labour compensation per employed worker,NTD,79284.0,105101.0,200046.0,319146.0,416094.0,436811.0,426264.0,450211.0,451929.0,0.38
+S,Other Services,4,Total annual receipts of enterprises,million NTD,25134.0,37306.0,84406.0,133140.0,174832.0,173909.0,206719.0,279083.0,241929.0,-13.31
+S,Other Services,5,Total annual expenditures of enterprises,million NTD,21778.0,31981.0,71964.0,116444.0,127391.0,126657.0,153320.0,208644.0,188844.0,-9.49
+S,Other Services,6,Total annual output of enterprises,million NTD,22539.0,33428.0,76948.0,124192.0,165591.0,165885.0,196848.0,267964.0,229725.0,-14.27
+S,Other Services,7,Gross value added of enterprises,million NTD,14635.0,20710.0,46777.0,77087.0,93590.0,96155.0,110032.0,147532.0,117777.0,-20.17
+S,Other Services,8,Net assets in actual use (year-end),million NTD,56651.0,59946.0,244366.0,353801.0,381404.0,461010.0,512676.0,740029.0,871958.0,17.83
+S,Other Services,9,Net fixed assets in actual use (year-end),million NTD,51379.0,51598.0,225192.0,292180.0,302196.0,373107.0,437990.0,582211.0,659358.0,13.25
+S,Other Services,10(1),Average number of employees per enterprise,persons,2.5,2.4,2.6,2.6,2.1,1.8,1.7,1.9,1.8,-6.03
+S,Other Services,10(2),Average assets in actual use per enterprise,thousand NTD,1223.0,1163.0,4459.0,6201.0,5500.0,5641.0,5531.0,7060.0,8034.0,13.8
+S,Other Services,11,Labour equipment ratio,thousand NTD,485.0,493.0,1748.0,2359.0,2580.0,3093.0,3190.0,3699.0,4479.0,21.09
+S,Other Services,12,Labour productivity,thousand NTD,125.0,170.0,335.0,514.0,633.0,645.0,685.0,738.0,605.0,-18.02
+S,Other Services,13(1),Gross value added per NTD of assets in actual use,NTD,0.26,0.35,0.19,0.22,0.25,0.21,0.21,0.2,0.14,-32.25
+S,Other Services,13(2),Gross value added per NTD of fixed assets in actual use,NTD,0.28,0.4,0.21,0.26,0.31,0.26,0.25,0.25,0.18,-29.51
+S,Other Services,14,Labour compensation as % of total expenditures,%,42.51,39.99,38.87,41.11,25.45,30.82,26.95,26.69,27.15,0.46
+S,Other Services,15(1),Value-added ratio,%,64.93,61.95,60.79,62.07,56.52,57.96,55.9,55.06,51.27,-3.79
+S,Other Services,15(2),Profit ratio,%,13.35,14.27,14.74,12.54,27.13,27.17,25.83,25.24,21.94,-3.3
+S,Other Services,15(3),Asset turnover ratio,%,44.11,61.98,34.27,37.07,45.24,37.43,40.01,37.45,27.12,-10.33
