@@ -8,7 +8,7 @@ Parses the Taiwan **Census of Industry and Commerce** (工商及服務業普查)
 - **9 census years**: 1981, 1986, 1991, 1996, 2001, 2006, 2011, 2016, 2021
 - **19 economic indicators** per industry per year
 
-## Output: `tw_industry_census.csv`
+## Output: `data/clean/tw_industry_census.csv`
 
 | Column | Description |
 |---|---|
@@ -49,13 +49,13 @@ Parses the Taiwan **Census of Industry and Commerce** (工商及服務業普查)
 Original PDFs are published by the DGBAS, Executive Yuan, Taiwan:
 https://www.dgbas.gov.tw/np.asp?ctNode=2373
 
-Download the ROC year 110 (2021) census report PDFs and place them in a `raw data/` folder to reproduce the output.
+Download the ROC year 110 (2021) census report PDFs and place them in `data/raw/`.
 
 ## Usage
 
 ```bash
 pip install pdfplumber
-python parse_pdfs.py
+python scripts/Python/parse_pdfs.py
 ```
 
-Outputs `tw_industry_census.csv` in the project root.
+Outputs `data/clean/tw_industry_census.csv`.

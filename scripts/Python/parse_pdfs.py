@@ -297,8 +297,9 @@ def parse_pdf(pdf_path):
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
-    raw_dir     = os.path.join(os.path.dirname(__file__), 'raw data')
-    output_path = os.path.join(os.path.dirname(__file__), 'tw_industry_census.csv')
+    root        = os.path.join(os.path.dirname(__file__), '..', '..')
+    raw_dir     = os.path.join(root, 'data', 'raw')
+    output_path = os.path.join(root, 'data', 'clean', 'tw_industry_census.csv')
     pdf_files   = sorted(f for f in os.listdir(raw_dir) if f.endswith('.pdf'))
 
     # Column headers use Gregorian years (ROC + 1911)
