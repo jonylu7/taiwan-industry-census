@@ -44,6 +44,22 @@ Parses the Taiwan **Census of Industry and Commerce** (工商及服務業普查)
 | 15(2) | Profit ratio | % |
 | 15(3) | Asset turnover ratio | % |
 
+## Output: `data/clean/tw_cpi.csv`
+
+Annual Consumer Price Index (CPI) for Taiwan, base year 2021 (ROC 110 = 100).
+
+| Column | Description |
+|---|---|
+| `year` | Gregorian year (ROC year + 1911) |
+| `cpi_index` | CPI index value (base: 2021 = 100) |
+
+Coverage: 1981–2021 (41 years).
+
+Source: DGBAS — Consumer Price Basic Classification Index (消費者物價基本分類指數).
+Script: `scripts/Python/parse_cpi.py`
+
+---
+
 ## Data Source
 
 Original PDFs are published by the DGBAS, Executive Yuan, Taiwan:
