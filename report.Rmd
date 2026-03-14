@@ -1,0 +1,331 @@
+---
+title: 'Productivity Without Prosperity: Census Evidence on Wage Stagnation in Taiwan'
+author: "Wei-Jen,Lu"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+    latex_engine: xelatex
+  word_document:
+    toc: true
+    toc_depth: '2'
+fontsize: 12pt
+geometry: margin=0.75in
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.align = "center",
+  fig.width = 7,
+  fig.height = 4.5
+)
+
+library(tidyverse)
+library(stargazer)
+
+# Load data
+df <- read_csv("data/clean/census_clean.csv")
+
+# Add sector classification
+df <- df %>%
+  mutate(sector = case_when(
+    industry_code == "C" ~ "Manufacturing",
+    industry_code %in% c("G","H","I","J","K","L","M","N","P","Q","R","S") ~ "Services",
+    TRUE ~ "Other"
+  ))
+
+# Filter out regulated/non-market industries
+df <- df %>%
+  filter(!industry_code %in% c("B", "D", "E", "O"))
+
+cpi_data<-read_csv("data/clean/tw_cpi.csv") %>%
+  filter(year %in% c(1981, 1986, 1991, 1996, 2001, 2006, 2011, 2016, 2021))
+df<-df %>%
+  left_join(cpi_data, by = "year") %>%
+  mutate(
+    real_compensation= labor_compensation / cpi_index * 100/1000,#/1000 is for formating
+    real_labor_productivity  = labor_productivity / cpi_index * 100,
+    real_capital_labor_ratio=capital_labor_ratio / cpi_index * 100
+    )
+# Split by period
+df_early <- df %>% filter(year <= 1996)
+df_late  <- df %>% filter(year >= 2001)
+
+
+```
+
+\newpage
+
+# Introduction
+
+My parents entered the workforce in the 1980s. Their starting salary was roughly the same as mine today — yet Taiwan's GDP per capita has grown more than tenfold over the same period. Something is wrong!
+
+This report investigates what went wrong. Using four decades of industry-level data from Taiwan's Industrial and Commercial Census, I document a systematic decoupling of wages from productivity growth between 1981 and 2021. Despite remarkable economic transformation — Taiwan's rise as one of the "Four Asian Tigers," driven by rapid industrialization and technological upgrading — the fruits of this growth have increasingly bypassed workers,instead flowing toward capital.
+
+There are three main findings. First, wages have systematically lagged behind productivity growth with a wage-productivity elasticity of approximately 0.691. Second, prior to 2001, wages captured approximately 82% of productivity gains; after 2001, this figure fell to just 45%. Third, the divergence is most significant in manufacturing, where the elasticity collapsed from 0.94 to 0.48. The profit rate rose from approximately 4% to 11% over the sample period, while the labour share of GVA(gross value added) remained broadly stable at 50--55%. The rise in profit rates, combined with the declining wage-productivity elasticity documented above, suggests that productivity gains were increasingly retained by firms rather than passed on to workers.
+
+# Data
+
+## Source and Coverage
+
+The primary data source is the Taiwan Industrial and Commercial Census, conducted every five years by the Directorate-General of Budget, Accounting and Statistics (DGBAS). The census covers all registered enterprises in Taiwan and provides industry-level data on employment, compensation, output, value added, capital assets,etc. Our sample spans six census years,from 1981 to 2021, covering 19 major industry divisions under the Standard Industrial Classification.
+
+We exclude four industries from the main analysis: Mining and Quarrying (B), Electricity and Gas Supply (D), Water Supply and Remediation (E), and Public Administration (O). These sectors are either price-regulated, government-operated, or too small to be representative of market outcomes.
+
+## Variable Construction
+
+All monetary variables are deflated to 2021 prices using the Consumer Price Index (CPI) provided by DGBAS, with 2021 as the base year. Key variables are defined as follows:
+
+-   **Labour productivity**: Value added per employee (thousand NTD, real)
+-   **Labour compensation**: Average annual compensation per hired worker (NTD, real)
+-   **Capital-labour ratio**: Net assets per employee (thousand NTD, real)
+-   **Profit rate**: Profit as a percentage of total expenditure
+
+The labour share of income is constructed as:
+
+$$\text{Labour Share}_{it} = \frac{w_{it} \cdot N_{it}}{Y_{it}}$$
+
+where $w_{it}$ is average annual labour compensation per hired worker, $N_{it}$ is the number of employees, and $Y_{it}$ is gross value added (GVA). In practice:
+
+$$\text{Labour Share}_{it} = \frac{\text{compensation}_{it} \times \text{employees}_{it}}
+{\text{GVA}_{it} \times 10^6}$$
+
+where compensation is in NTD per worker, employees in persons, and value added in millions of NTD.
+
+## Data Limitations
+
+There's a limitation should be noted, which the definition of labour compensation changed between the 1986 and 1991 census rounds: earlier rounds report compensation per employed worker (including self-employed), while later rounds report compensation per hired worker only. This break should be borne in mind when interpreting the pre-2001 results.
+
+# Empirical Framework
+
+## Theoretical Background
+
+This report builds on the neoclassical theory of the firm. Consider a representative firm maximizing profit:
+
+$$\max_{N,K} \ \pi = AF(K,N) - wN - rK$$
+
+where $Y = AF(K,N)$ is output, $A$ is total factor productivity, $N$ is labour, $K$ is capital, $w$ is the wage , and $r$ is the rental cost of capital. The first-order conditions:
+
+**First-Order Conditions (FOC):**
+
+$$w = A \cdot F_N =MPL$$ $$r = A \cdot F_K=MPK$$
+
+Which means, in equilibrium, each factor is compensated at its marginal product. Assuming a Cobb-Douglas production technology:
+
+$$Y = A \cdot K^{\alpha} \cdot N^{1-\alpha}$$
+
+the marginal product of labour is:
+
+$$MPL = (1-\alpha) \cdot \frac{Y}{N}$$
+
+so the equilibrium wage condition becomes:
+
+$$w = (1-\alpha) \cdot \frac{Y}{N}$$
+
+Taking logarithms on both sides:
+
+$$\ln(w) = \ln(1-\alpha) + \ln\left(\frac{Y}{N}\right)$$
+
+This motivates the following empirical specification:
+
+$$\ln(w_{it}) = \beta_0 + \beta_1 \cdot \ln\left(\frac{Y}{N}\right)_{it} + \varepsilon_{it}$$
+
+where $\beta_0$ absorbs the constant term $\ln(1-\alpha)$. Under neoclassical assumptions, the theory predicts $\beta_1 = 1$: a 1% increase in labour productivity should translate into a 1% increase in wages. A coefficient below will therefore constitute evidence of a systematic gap between productivity growth and wage growth.
+
+### Extensions
+
+We extend the baseline analyzation in two ways. First, to test whether the wage-productivity relationship changed over time, we estimate the model separately for the pre-2001 (1981--1996) and post-2001 (2001--2021) periods, applying a Chow test to assess the significance of the structural break. Second, we estimate the model separately for Manufacturing^[Manufacturing comprises industry C (Manufacturing)] and Services^[Services comprises industries G (Wholesale and Retail Trade), H (Transportation and Storage), I (Accommodation and Food Service), J (Publishing, Audio-Visual and Information), K (Finance and Insurance), L (Real Estate), M (Professional, Scientific and Technical Services), N (Support Services), P (Education), Q (Health and Social Work), R (Arts, Entertainment and 
+Recreation),and S (Others)] to examine whether the wage-productivity gap differs across different sector of industries.
+
+# Results
+
+## Validating the Cobb-Douglas Framework
+
+Before examining the wage-productivity relationship, we have to verify that Taiwan's production structure is consistent with the Cobb-Douglas framework.Under Cobb-Douglas production function:
+
+$$Y = A \cdot K^{\alpha} \cdot N^{1-\alpha}$$
+
+Dividing both sides by $N$:
+
+$$\frac{Y}{N} = A \cdot \left(\frac{K}{N}\right)^{\alpha}$$
+
+Taking logarithms:
+
+$$\ln\left(\frac{Y}{N}\right) = \ln(A) + \alpha \cdot \ln\left(\frac{K}{N}\right)$$
+
+This motivates the empirical specification:
+
+$$\ln\left(\frac{Y}{N}\right)_{it} = \beta_0 + \beta_1 \cdot \ln\left(\frac{K}{N}\right)_{it} + \varepsilon_{it}$$
+
+where $\beta_1 = \alpha$ is the output elasticity of capital. Under the Cobb-Douglas framework, we expect $0 < \beta_1 < 1$.
+
+Table 1 presents the estimation results. The estimated coefficient is $\hat{\alpha} = 0.50$ (p \< 0.001), implying that a 1% increase in capital per worker is associated with a 0.50% increase in labour productivity. Validating the Cobb-Douglas assumption underlying our empirical framework. Then, we proceed to test the competitive benchmark of $\beta_1 = 1$ in the following section.
+
+```{r model1}
+model1 <- lm(log(real_labor_productivity) ~ log(real_capital_labor_ratio),
+             data = df, weights = employees)
+```
+
+```{r table1, results='asis'}
+stargazer(model1,
+          title = "Capital Deepening and Labour Productivity (Model 1)",
+          dep.var.labels = "log(Labour Productivity)",
+          covariate.labels = "log(Capital-Labour Ratio)",
+          header = FALSE,
+          single.row = TRUE,
+          font.size = "small",
+          label = "tab:model1")
+```
+
+## Wage-Productivity Elasticity
+
+After validated the usage of Cobb-Douglus function. Table 2 presents the wage-productivity elasticity for the full period and the two sub-periods. Over the full sample, the elasticity is 0.69, indicating that a 1% increase in labour productivity is associated with only a 0.69% increase in real wages. This is below expected, rejecting the hypothesis of full wage-productivity pass-through.^[When price-regulated and government-operated industries (Electricity and Gas, Water Supply, and Public Administration) are included, the elasticity falls to 0.61, suggesting that wage-productivity decoupling is more pronounced in 
+non-market sectors.]
+
+Moreover, The sub-period results reveal a striking structural change. Before 2001, the elasticity was 0.82, suggesting that wages largely kept pace with productivity growth. After 2001, the elasticity fell sharply to 0.46, implying that workers captured less than half of subsequent productivity gains. A Chow test confirms that this structural break is statistically significant (F = 4.583, p \< 0.05).
+
+```{r model2}
+model2          <- lm(log(real_compensation) ~ log(real_labor_productivity),
+                      data = df, weights = employees)
+model2_early    <- lm(log(real_compensation) ~ log(real_labor_productivity),
+                      data = df_early, weights = employees)
+model2_late     <- lm(log(real_compensation) ~ log(real_labor_productivity),
+                      data = df_late, weights = employees)
+```
+
+```{r table2, results='asis'}
+stargazer(model2, model2_early, model2_late,
+          title = "Wage-Productivity Elasticity: Full Period and Sub-periods (Model 2)",
+          dep.var.labels = "log(Real Compensation)",
+          covariate.labels = "log(Real Labour Productivity)",
+          column.labels = c("Full Period", "1981--1996", "2001--2021"),
+          header = FALSE,
+          single.row = TRUE,
+          font.size = "footnotesize",
+          label = "tab:model2",
+          no.space = TRUE,
+          column.sep.width = "-10pt")
+```
+
+```{r chow_test, results='asis'}
+library(strucchange)
+
+chow_result <- sctest(log(real_compensation) ~ log(real_labor_productivity),
+                      type = "Chow",
+                      point = which(unique(sort(df$year)) == 2001),
+                      data = df %>% arrange(year))
+
+cat("\\textbf{Chow Test:} F =", round(chow_result$statistic, 3),
+    ", p-value =", round(chow_result$p.value, 4))
+```
+```
+
+## Sector Heterogeneity
+
+```{r model3}
+model3_mfg <- lm(log(real_compensation) ~ log(real_labor_productivity),
+                 data = df %>% filter(sector == "Manufacturing"),
+                 weights = employees)
+model3_svc <- lm(log(real_compensation) ~ log(real_labor_productivity),
+                 data = df %>% filter(sector == "Services"),
+                 weights = employees)
+
+model3_mfg_early <- lm(log(real_compensation) ~ log(real_labor_productivity),
+                        data = df %>% filter(sector == "Manufacturing", year <= 1996),
+                        weights = employees)
+model3_mfg_late  <- lm(log(real_compensation) ~ log(real_labor_productivity),
+                        data = df %>% filter(sector == "Manufacturing", year >= 2001),
+                        weights = employees)
+model3_svc_early <- lm(log(real_compensation) ~ log(real_labor_productivity),
+                        data = df %>% filter(sector == "Services", year <= 1996),
+                        weights = employees)
+model3_svc_late  <- lm(log(real_compensation) ~ log(real_labor_productivity),
+                        data = df %>% filter(sector == "Services", year >= 2001),
+                        weights = employees)
+```
+
+Table 3 presents the sector-level results. Two findings stand out. First, manufacturing exhibited a much sharper decline in the wage-productivity elasticity than services: from 0.93 before 2001 to 0.48 after 2001, a fall of 0.45 percentage points. Services, by contrast, saw a smaller decline from 0.80 to 0.50. Second, before 2001, manufacturing workers captured nearly all productivity gains ($\beta_1 = 0.93$), suggesting a competitive labour market with strong wage-productivity linkage.
+
+The pronounced collapse in manufacturing's elasticity is consistent with the offshoring hypothesis: as Taiwanese manufacturers relocated production to mainland China following WTO accession, the credible threat of further relocation weakened workers' bargaining power, allowing firms to retain a larger share of productivity gains.
+
+```{r table3, results='asis'}
+stargazer(model3_mfg_early, model3_mfg_late, model3_svc_early, model3_svc_late,
+          title = "Wage-Productivity Elasticity by Sector and Period (Model 3)",
+          dep.var.labels = "log(Real Compensation)",
+          covariate.labels = "log(Real Labour Productivity)",
+          column.labels = c("Mfg 1981--96", "Mfg 2001--21", "Svc 1981--96", "Svc 2001--21"),
+          header = FALSE,
+          single.row = TRUE,
+          font.size = "footnotesize",
+          label = "tab:model2",
+          no.space = TRUE,
+          column.sep.width = "-10pt")
+
+```
+
+## Where Did the Productivity Gains Go?
+
+Figure 1 documents two concurrent trends over the sample period. The 
+employment-weighted profit rate rose steadily from approximately 4% in 
+1981 to 11% by 2021, nearly tripling over four decades. This rise 
+accelerated after 2001, coinciding with the structural break in the 
+wage-productivity elasticity documented in Section 4.2.
+
+These patterns are consistent with the hypothesis that productivity gains 
+not fully captured by wages were increasingly retained by firms as profit.
+
+```{r figure1, fig.cap="Profit Rate, 1981--2021. The dashed vertical line marks 2001."}
+df_share <- df %>%
+  group_by(year) %>%
+  summarise(
+    avg_profit_rate = weighted.mean(profit_rate, w = employees, na.rm = TRUE)
+  )
+
+df_share_long <- df_share %>%
+  pivot_longer(cols = avg_profit_rate,
+               names_to = "variable", values_to = "value") %>%
+  mutate(variable = recode(variable,
+                           "avg_profit_rate" = "Profit Rate"))
+
+ggplot(df_share_long, aes(x = year, y = value, color = variable)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2) +
+  geom_vline(xintercept = 2001, linetype = "dashed", color = "gray50") +
+  annotate("text", x = 2002, y = max(df_share_long$value, na.rm = TRUE),
+           label = "2001", hjust = 0, size = 3.5, color = "gray40") +
+  scale_color_manual(values = c("Profit Rate" = "#3A9E9E")) +
+  labs(x = "Year", y = "Percentage (%)", color = NULL) +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom")
+```
+
+\newpage
+# Discussion and Conclusion
+
+This report documents a systematic and growing gap between labour productivity and wage growth in Taiwan over 1981--2021. Our main findings can be summarised as follows:
+
+1.  **Wages lag productivity**: The employment-weighted wage-productivity elasticity is 0.69 over the full period, below the value implied by competitive labour markets theory.
+
+2.  **A structural break in 2001**: The elasticity fell from 0.82 before 2001 to 0.46 after 2001, a decline confirmed by a statistically significant Chow test. This break coincides with Taiwan's WTO accession and the acceleration of manufacturing offshoring to mainland China.
+
+3.  **Manufacturing most affected**: The wage-productivity elasticity in manufacturing collapsed from 0.93 to 0.48, a larger decline than in services (0.83 to 0.50), consistent with the offshoring threat reducing local workers' bargaining power.
+
+These findings have important policy implications. The wage-productivity gap cannot be attributed solely to market forces; it reflects structural shifts in bargaining power between capital and labour. Policies to strengthen collective bargaining, expand profit-sharing mechanisms, and support workers displaced by offshoring may help ensure that future productivity gains are more equitably distributed.
+
+Several limitations should be acknowledged. First, the census is conducted every five years, 
+limiting our ability to identify precise turning points in the wage-productivity 
+relationship. Second, while census data are available from as early as the 1950s, 
+pre-1981 records could not be incorporated due to inconsistencies in variable definitions 
+and classification systems across earlier census rounds. Ideally, firm-level microdata 
+from the Ministry of Economic Affairs or worker-level wage records from the Academia 
+Sinica would allow for a more granular analysis, but such data are not publicly 
+accessible. Future research with access to these datasets could more precisely identify 
+the mechanisms driving the wage-productivity gap in Taiwan, and more rigorously decompose 
+where the fruits of productivity growth ultimately accrued.
+
+\newpage
