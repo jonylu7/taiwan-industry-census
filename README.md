@@ -1,14 +1,43 @@
-# Taiwan Industry Census Data (1981–2021)
+# Taiwan Industry Census Analysis (1981–2021)
 
-Parses the Taiwan **Census of Industry and Commerce** (工商及服務業普查) published by the Directorate-General of Budget, Accounting and Statistics (DGBAS) into a clean, analysis-ready CSV.
+Parses the Taiwan **Census of Industry and Commerce** (工商及服務業普查) published by the Directorate-General of Budget, Accounting and Statistics (DGBAS) into a clean, analysis-ready dataset, then analyses labour compensation, productivity, and profit trends across 17 industries using visualisation and regression.
 
-## Coverage
+---
 
-- **17 industries** (TSIC sections B–S, excluding A and O)
-- **9 census years**: 1981, 1986, 1991, 1996, 2001, 2006, 2011, 2016, 2021
-- **19 economic indicators** per industry per year
+## Project Structure
 
-## Output: `data/clean/tw_industry_census.csv`
+```
+taiwan-industry-census/
+├── data/
+│   ├── raw/                         # Raw source files (not tracked by git)
+│   │   ├── *.pdf                    # DGBAS census PDFs (ROC year 110)
+│   │   └── A030101015_*.csv         # DGBAS CPI CSV (Big5 encoded)
+│   └── clean/
+│       ├── tw_industry_census.csv   # Parsed census data (long format)
+│       ├── census_clean.csv         # Reshaped data for analysis
+│       └── tw_cpi.csv               # CPI index (1981–2021)
+├── scripts/
+│   ├── Python/
+│   │   ├── parse_pdfs.py            # PDF → tw_industry_census.csv
+│   │   └── parse_cpi.py             # CPI CSV → tw_cpi.csv
+│   └── R/
+│       ├── 01_clean_data.R          # Load and inspect census data
+│       ├── 02_visualization.R       # Generate figures
+│       └── 03_regression.R          # Regression analysis
+├── output/
+│   └── figures/                     # PNG charts
+├── report.Rmd                       # Full analysis report (R Markdown)
+├── report.pdf                       # Compiled report
+└── README.md
+```
+
+---
+
+## Data
+
+### `data/clean/tw_industry_census.csv`
+
+Parsed from DGBAS census PDFs. Long format: one row per industry × indicator × year.
 
 | Column | Description |
 |---|---|
@@ -19,6 +48,45 @@ Parses the Taiwan **Census of Industry and Commerce** (工商及服務業普查)
 | `unit` | Unit of measurement |
 | `1981` … `2021` | Value for that census year (`None` if not surveyed) |
 | `change_2016_to_2021_pct` | % change from 2016 to 2021 |
+
+Coverage: 17 industries, 9 census years (1981–2021), 19 indicators each.
+
+### `data/clean/tw_cpi.csv`
+
+Annual CPI for Taiwan, base year 2021 (= 100).
+
+| Column | Description |
+|---|---|
+| `year` | Gregorian year (ROC year + 1911) |
+| `cpi_index` | CPI index value (base: 2021 = 100) |
+
+Coverage: 1981–2021 (41 years).
+
+---
+
+## Analysis
+
+### Visualisation (`02_visualization.R`)
+
+Generates industry-level time series charts for:
+- Labour compensation (nominal and CPI-deflated)
+- Labour productivity (nominal and CPI-deflated)
+- Capital–labour ratio
+- Value added and value-added rate
+- Labour cost ratio and profit rate
+- Labour share of gross value added
+
+### Regression (`03_regression.R`)
+
+Investigates the productivity–wage relationship across Taiwan's industries:
+
+- **Model 1**: Does productivity growth translate to wage growth?
+  - OLS and employment-weighted regressions on `log(real_compensation) ~ log(real_labor_productivity)`
+  - Split by early period (≤ 1996) and late period (≥ 2001) to test for a structural break around 2001
+  - Structural break test using `strucchange`
+- Real variables deflated by CPI (base 2021 = 100)
+
+---
 
 ## Indicators
 
@@ -44,34 +112,21 @@ Parses the Taiwan **Census of Industry and Commerce** (工商及服務業普查)
 | 15(2) | Profit ratio | % |
 | 15(3) | Asset turnover ratio | % |
 
-## Output: `data/clean/tw_cpi.csv`
-
-Annual Consumer Price Index (CPI) for Taiwan, base year 2021 (ROC 110 = 100).
-
-| Column | Description |
-|---|---|
-| `year` | Gregorian year (ROC year + 1911) |
-| `cpi_index` | CPI index value (base: 2021 = 100) |
-
-Coverage: 1981–2021 (41 years).
-
-Source: DGBAS — Consumer Price Basic Classification Index (消費者物價基本分類指數).
-Script: `scripts/Python/parse_cpi.py`
-
 ---
 
-## Data Source
+## Data Sources
 
-Original PDFs are published by the DGBAS, Executive Yuan, Taiwan:
-https://www.dgbas.gov.tw/np.asp?ctNode=2373
+- **Census PDFs**: DGBAS Census of Industry and Commerce — https://www.dgbas.gov.tw/np.asp?ctNode=2373
+- **CPI**: DGBAS Consumer Price Basic Classification Index (消費者物價基本分類指數)
 
-Download the ROC year 110 (2021) census report PDFs and place them in `data/raw/`.
+Place raw files in `data/raw/` to reproduce the cleaned datasets.
 
-## Usage
+## Reproducing the Data
 
 ```bash
 pip install pdfplumber
-python scripts/Python/parse_pdfs.py
+python scripts/Python/parse_pdfs.py   # → data/clean/tw_industry_census.csv
+python scripts/Python/parse_cpi.py    # → data/clean/tw_cpi.csv
 ```
 
-Outputs `data/clean/tw_industry_census.csv`.
+Then run the R scripts in order (`01` → `02` → `03`) in RStudio.
